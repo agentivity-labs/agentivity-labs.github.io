@@ -20,7 +20,7 @@
 
     header {
       text-align: center;
-      margin-bottom: 56px;
+      margin-bottom: 40px;
     }
 
     .logo {
@@ -61,6 +61,27 @@
       color: #64748b;
       margin-top: 4px;
     }
+
+    .mission {
+      width: 100%;
+      max-width: 720px;
+      margin-bottom: 48px;
+      background: #1a1f2e;
+      border: 1px solid #252d3d;
+      border-radius: 8px;
+      padding: 24px 28px;
+    }
+
+    .mission p {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .mission p:last-child { margin-bottom: 0; }
+
+    .mission strong { color: #cbd5e1; font-weight: 600; }
 
     section {
       width: 100%;
@@ -140,6 +161,12 @@
       border-color: #3b82f630;
     }
 
+    .tag.indigo {
+      color: #a5b4fc;
+      background: #6366f115;
+      border-color: #6366f130;
+    }
+
     .project-links {
       display: flex;
       gap: 10px;
@@ -179,6 +206,24 @@
   <h1>Open source projects &amp; research</h1>
 </header>
 
+<div class="mission">
+  <p>
+    <strong>Agentivity Labs</strong> is our open research and engineering lab — where we explore
+    what it means to build production-grade interfaces for AI agents.
+  </p>
+  <p>
+    Our mission is to make agentic AI accessible to everyone — from individuals exploring what
+    agents can do, to teams running complex workflows, to large organisations embedding agents into
+    their core operations. Not just accessible to engineers: accessible to anyone who wants to work
+    alongside AI agents, understand what they are doing, and stay in control.
+  </p>
+  <p>
+    We believe the bottleneck is not model capability — it is the lack of a mature ecosystem around
+    it. The open-source work published here is part of that ecosystem: the building blocks we open
+    up so the broader community can build on the same foundation.
+  </p>
+</div>
+
 <section>
   <p class="section-title">SDKs &amp; Libraries</p>
 
@@ -202,6 +247,28 @@
       <a href="https://github.com/agentivity-labs/agentivity_ag_ui" onclick="event.stopPropagation()">GitHub</a>
     </div>
   </a>
+
+  <a class="project-card" href="/agentivity_artifacts/example/">
+    <span class="project-icon">🔬</span>
+    <div class="project-body">
+      <div class="project-name">agentivity_artifacts</div>
+      <div class="project-desc">
+        14 Flutter widgets for rendering AI agent artifacts — charts, KPI grids, code blocks,
+        JSON viewer, LaTeX formulas, SVG diagrams, status cards and timelines. 11 built-in themes.
+      </div>
+      <div class="project-tags">
+        <span class="tag indigo">Flutter</span>
+        <span class="tag indigo">14 widgets</span>
+        <span class="tag">11 themes</span>
+        <span class="tag">pub.dev</span>
+      </div>
+    </div>
+    <div class="project-links">
+      <a href="https://pub.dev/packages/agentivity_artifacts" onclick="event.stopPropagation()">pub.dev</a>
+      <a href="https://github.com/agentivity-labs/agentivity_artifacts" onclick="event.stopPropagation()">GitHub</a>
+    </div>
+  </a>
+
 </section>
 
 <footer>
