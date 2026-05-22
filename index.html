@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agentivity Labs</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 64px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      text-decoration: none;
+    }
+
+    .logo-dot {
+      width: 28px;
+      height: 28px;
+      background: #3b82f6;
+      border-radius: 6px;
+    }
+
+    .logo-text {
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.3px;
+    }
+
+    .logo-sub {
+      font-size: 11px;
+      font-weight: 500;
+      color: #3b82f6;
+      background: #3b82f615;
+      border: 1px solid #3b82f630;
+      border-radius: 3px;
+      padding: 1px 6px;
+    }
+
+    header h1 {
+      font-size: 13px;
+      font-weight: 400;
+      color: #64748b;
+      margin-top: 4px;
+    }
+
+    section {
+      width: 100%;
+      max-width: 720px;
+      margin-bottom: 48px;
+    }
+
+    .section-title {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #475569;
+      margin-bottom: 12px;
+    }
+
+    .project-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 18px 20px;
+      background: #1a1f2e;
+      border: 1px solid #252d3d;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.15s, background 0.15s;
+      margin-bottom: 10px;
+    }
+
+    .project-card:hover {
+      border-color: #3b82f6;
+      background: #1e2438;
+    }
+
+    .project-icon {
+      font-size: 20px;
+      margin-top: 1px;
+      flex-shrink: 0;
+    }
+
+    .project-body { flex: 1; }
+
+    .project-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #f1f5f9;
+      margin-bottom: 4px;
+    }
+
+    .project-desc {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      font-size: 10px;
+      font-weight: 500;
+      color: #94a3b8;
+      background: #1e293b;
+      border: 1px solid #2d3f55;
+      border-radius: 3px;
+      padding: 2px 7px;
+    }
+
+    .tag.blue {
+      color: #60a5fa;
+      background: #1e3a5f20;
+      border-color: #3b82f630;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 10px;
+      margin-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .project-links a {
+      font-size: 11px;
+      color: #475569;
+      text-decoration: none;
+      transition: color 0.12s;
+    }
+
+    .project-links a:hover { color: #60a5fa; }
+
+    footer {
+      margin-top: auto;
+      padding-top: 48px;
+      font-size: 11px;
+      color: #334155;
+      text-align: center;
+    }
+
+    footer a { color: #475569; text-decoration: none; }
+    footer a:hover { color: #94a3b8; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="https://agentivity.io">
+    <div class="logo-dot"></div>
+    <span class="logo-text">Agentivity</span>
+    <span class="logo-sub">Labs</span>
+  </a>
+  <h1>Open source projects &amp; research</h1>
+</header>
+
+<section>
+  <p class="section-title">SDKs &amp; Libraries</p>
+
+  <a class="project-card" href="/agentivity_ag_ui/">
+    <span class="project-icon">⚡</span>
+    <div class="project-body">
+      <div class="project-name">agentivity_ag_ui</div>
+      <div class="project-desc">
+        Flutter SDK for building AI agent interfaces — AG-UI protocol, SSE streaming,
+        chat panel, HIL forms, generative UI, LangGraph &amp; Agentivity connectors.
+      </div>
+      <div class="project-tags">
+        <span class="tag blue">Flutter</span>
+        <span class="tag blue">AG-UI</span>
+        <span class="tag">iOS · Android · Web</span>
+        <span class="tag">pub.dev</span>
+      </div>
+    </div>
+    <div class="project-links">
+      <a href="https://pub.dev/packages/agentivity_ag_ui" onclick="event.stopPropagation()">pub.dev</a>
+      <a href="https://github.com/agentivity-labs/agentivity_ag_ui" onclick="event.stopPropagation()">GitHub</a>
+    </div>
+  </a>
+</section>
+
+<footer>
+  <a href="https://agentivity.io">agentivity.io</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/agentivity-labs">github.com/agentivity-labs</a>
+</footer>
+
+</body>
+</html>
